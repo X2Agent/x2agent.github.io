@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,7 +8,10 @@
     <link rel="stylesheet" href="css/style.css">
     <style>
         /* 特定于首页的样式 */
-        .features, .screenshots, .features-detail, .use-cases {
+        .features,
+        .screenshots,
+        .features-detail,
+        .use-cases {
             margin-bottom: 80px;
             background-color: var(--card-background);
             padding: 40px;
@@ -16,7 +20,10 @@
             transition: transform 0.3s ease;
         }
 
-        .features:hover, .screenshots:hover, .features-detail:hover, .use-cases:hover {
+        .features:hover,
+        .screenshots:hover,
+        .features-detail:hover,
+        .use-cases:hover {
             transform: translateY(-5px);
         }
 
@@ -43,7 +50,9 @@
             filter: brightness(1.1);
         }
 
-        h1, h2, h3 {
+        h1,
+        h2,
+        h3 {
             color: var(--text-primary);
             margin-top: 0;
             line-height: 1.3;
@@ -82,10 +91,34 @@
         }
     </style>
 </head>
+
 <body>
     <header>
+        <div class="header-container">
+            <!-- Logo和站点名称 -->
+            <div class="logo-container">
+                <h1>X2Agent</h1>
+            </div>
+
+            <!-- 导航菜单 -->
+            <nav class="navigation">
+                <ul class="nav-links">
+                    <li><a href="#features">功能</a></li>
+                    <li><a href="#use-cases">应用场景</a></li>
+                </ul>
+            </nav>
+
+            <!-- 右侧操作按钮 -->
+            <div class="header-actions">
+                <button class="github-link" onclick="window.location.href='https://github.com/X2Agent'">
+                    <img src="images/github-mark.svg" alt="GitHub" width="16" height="16"
+                        style="display: inline-block; vertical-align: middle; margin-right: 8px; transition: transform 0.3s ease;">
+                    View on GitHub
+                </button>
+            </div>
+        </div>
         <div class="header-content">
-            <h1>X2Agent</h1>
+            <h1>MarketAssistant</h1>
             <p>一个开源的股票市场助手，提供实时股市信息、股票详情分析，支持MCP配置和本地向量内容搜索</p>
         </div>
         <div class="blob"></div>
@@ -123,36 +156,36 @@
             <h2>功能详情</h2>
             <h3>股市信息展示</h3>
             <p>支持全球主要股票市场，包括A股、美股、港股、日股等，展示实时价格、涨跌幅、成交量、换手率等核心数据，并提供图表可视化展示。</p>
-            
+
             <h3>股票详情分析</h3>
             <p>提供全面的股票分析工具，包含：
-                <ul>
-                    <li>K线图与技术指标分析（MACD、RSI、均线系统等）</li>
-                    <li>财务数据分析（营收、利润、资产负债等核心指标）</li>
-                    <li>新闻舆情分析（正负面情绪识别、热点事件追踪）</li>
-                    <li>历史数据回溯与对比分析</li>
-                </ul>
+            <ul>
+                <li>K线图与技术指标分析（MACD、RSI、均线系统等）</li>
+                <li>财务数据分析（营收、利润、资产负债等核心指标）</li>
+                <li>新闻舆情分析（正负面情绪识别、热点事件追踪）</li>
+                <li>历史数据回溯与对比分析</li>
+            </ul>
             </p>
-            
+
             <h3>MCP配置</h3>
             <p>MCP（Model Configuration Parameters）是X2Agent的模型配置参数系统，允许用户通过YAML配置文件调整模型的行为特征。支持的配置项包括：
-                <ul>
-                    <li>数据更新频率与时间范围设置</li>
-                    <li>风险偏好参数调节</li>
-                    <li>算法模型选择（不同预测模型切换）</li>
-                    <li>个性化指标权重配置</li>
-                </ul>
+            <ul>
+                <li>数据更新频率与时间范围设置</li>
+                <li>风险偏好参数调节</li>
+                <li>算法模型选择（不同预测模型切换）</li>
+                <li>个性化指标权重配置</li>
+            </ul>
             </p>
-            
+
             <h3>本地向量搜索</h3>
             <p>X2Agent采用FAISS向量数据库实现高效的本地搜索功能，支持对以下内容进行快速检索：
-                <ul>
-                    <li>股票相关新闻（标题、正文、来源等）</li>
-                    <li>公司公告与财报</li>
-                    <li>行业研究报告</li>
-                    <li>社交媒体讨论内容</li>
-                </ul>
-                搜索响应时间低于200ms，支持自然语言查询和相关性排序。
+            <ul>
+                <li>股票相关新闻（标题、正文、来源等）</li>
+                <li>公司公告与财报</li>
+                <li>行业研究报告</li>
+                <li>社交媒体讨论内容</li>
+            </ul>
+            搜索响应时间低于200ms，支持自然语言查询和相关性排序。
             </p>
         </section>
 
@@ -176,4 +209,5 @@
         </div>
     </footer>
 </body>
+
 </html>
