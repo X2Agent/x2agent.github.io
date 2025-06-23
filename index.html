@@ -4,210 +4,187 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>X2Agent - 股票市场智能助手</title>
+    <title>X2Agent - 智能助手生态平台</title>
     <link rel="stylesheet" href="css/style.css">
-    <style>
-        /* 特定于首页的样式 */
-        .features,
-        .screenshots,
-        .features-detail,
-        .use-cases {
-            margin-bottom: 80px;
-            background-color: var(--card-background);
-            padding: 40px;
-            border-radius: var(--border-radius);
-            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
-            transition: transform 0.3s ease;
-        }
-
-        .features:hover,
-        .screenshots:hover,
-        .features-detail:hover,
-        .use-cases:hover {
-            transform: translateY(-5px);
-        }
-
-        .feature-item {
-            display: flex;
-            align-items: center;
-            margin-bottom: 30px;
-            transition: transform 0.3s ease;
-        }
-
-        .feature-item:hover {
-            transform: translateX(10px);
-        }
-
-        .feature-icon {
-            width: 60px;
-            height: 60px;
-            margin-right: 25px;
-            flex-shrink: 0;
-            transition: all 0.3s ease;
-        }
-
-        .feature-item:hover .feature-icon {
-            filter: brightness(1.1);
-        }
-
-        h1,
-        h2,
-        h3 {
-            color: var(--text-primary);
-            margin-top: 0;
-            line-height: 1.3;
-            font-weight: 700;
-        }
-
-        p {
-            margin-bottom: 1.2em;
-            color: var(--text-secondary);
-        }
-
-        ul {
-            padding-left: 20px;
-            margin-bottom: 1.2em;
-            color: var(--text-secondary);
-        }
-
-        footer {
-            background-color: #0A0A0A;
-            text-align: center;
-            padding: 40px 20px;
-            color: #ccc;
-            font-size: 0.9em;
-        }
-
-        .footer-content {
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 20px;
-            text-align: center;
-        }
-
-        .thank-you {
-            color: var(--accent-color);
-            font-weight: bold;
-        }
-    </style>
 </head>
 
 <body>
-    <header>
-        <div class="header-container">
-            <!-- Logo和站点名称 -->
-            <div class="logo-container">
-                <h1>X2Agent</h1>
-            </div>
+    <!-- Header占位符 -->
+    <div id="header-placeholder"></div>
 
-            <!-- 导航菜单 -->
-            <nav class="navigation">
-                <ul class="nav-links">
-                    <li><a href="#features">功能</a></li>
-                    <li><a href="#use-cases">应用场景</a></li>
-                </ul>
-            </nav>
-
-            <!-- 右侧操作按钮 -->
-            <div class="header-actions">
-                <button class="github-link" onclick="window.location.href='https://github.com/X2Agent'">
-                    <img src="images/github-mark.svg" alt="GitHub" width="16" height="16"
-                        style="display: inline-block; vertical-align: middle; margin-right: 8px; transition: transform 0.3s ease;">
-                    View on GitHub
-                </button>
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="hero-content">
+            <h1 class="hero-title">X2Agent 生态平台</h1>
+            <p class="hero-subtitle">网站由AI生成,内容不代表项目最终规划</p>
+            <p class="hero-subtitle">构建下一代智能助手生态系统，为不同领域提供专业化的AI解决方案</p>
+            <div class="hero-actions">
+                <a href="#agents" class="cta-button primary">探索助手</a>
+                <a href="#docs" class="cta-button secondary">查看文档</a>
             </div>
         </div>
-        <div class="header-content">
-            <h1>MarketAssistant</h1>
-            <p>一个开源的股票市场助手，提供实时股市信息、股票详情分析，支持MCP配置和本地向量内容搜索</p>
+    </section>
+
+    <!-- Agents Section -->
+    <section id="agents" class="agents-section">
+        <div class="section-container">
+            <h2 class="section-title">智能助手生态</h2>
+            <p class="section-subtitle">专业化的AI助手，为不同领域提供定制化解决方案</p>
+            <div class="agents-grid">
+                <div class="agent-card featured">
+                    <div class="agent-header">
+                        <img src="images/stock-data-icon.svg" alt="MarketAssistant" class="agent-icon">
+                        <div class="agent-status">已发布</div>
+                    </div>
+                    <h3 class="agent-title">MarketAssistant</h3>
+                    <p class="agent-description">专业的股票市场智能助手，提供实时股市数据、技术分析、财务分析等全方位服务</p>
+                    <div class="agent-features">
+                        <span class="feature-tag">实时数据</span>
+                        <span class="feature-tag">技术分析</span>
+                        <span class="feature-tag">向量搜索</span>
+                    </div>
+                    <div class="agent-actions">
+                        <a href="market-assistant.html" class="btn-primary">立即体验</a>
+                         <a href="market-assistant.html" class="btn-secondary">了解更多</a>
+                    </div>
+                </div>
+                
+                <div class="agent-card">
+                    <div class="agent-header">
+                        <img src="images/analysis-icon.svg" alt="CodeAssistant" class="agent-icon">
+                        <div class="agent-status coming-soon">即将推出</div>
+                    </div>
+                    <h3 class="agent-title">CodeAssistant</h3>
+                    <p class="agent-description">智能代码助手，支持多种编程语言的代码生成、优化、调试和文档生成</p>
+                    <div class="agent-features">
+                        <span class="feature-tag">代码生成</span>
+                        <span class="feature-tag">智能调试</span>
+                        <span class="feature-tag">文档生成</span>
+                    </div>
+                    <div class="agent-actions">
+                        <a href="#" class="btn-disabled">敬请期待</a>
+                        <a href="/code-assistant/preview" class="btn-secondary">预览功能</a>
+                    </div>
+                </div>
+                
+                <div class="agent-card">
+                    <div class="agent-header">
+                        <img src="images/mcp-config-icon.svg" alt="DataAssistant" class="agent-icon">
+                        <div class="agent-status coming-soon">开发中</div>
+                    </div>
+                    <h3 class="agent-title">DataAssistant</h3>
+                    <p class="agent-description">数据分析专家，提供数据清洗、可视化、机器学习模型训练等数据科学服务</p>
+                    <div class="agent-features">
+                        <span class="feature-tag">数据清洗</span>
+                        <span class="feature-tag">可视化</span>
+                        <span class="feature-tag">ML模型</span>
+                    </div>
+                    <div class="agent-actions">
+                        <a href="#" class="btn-disabled">开发中</a>
+                        <a href="/data-assistant/roadmap" class="btn-secondary">开发路线</a>
+                    </div>
+                </div>
+                
+                <div class="agent-card">
+                    <div class="agent-header">
+                        <img src="images/vector-search-icon.svg" alt="ContentAssistant" class="agent-icon">
+                        <div class="agent-status coming-soon">规划中</div>
+                    </div>
+                    <h3 class="agent-title">ContentAssistant</h3>
+                    <p class="agent-description">内容创作助手，支持文章写作、SEO优化、多媒体内容生成和内容策略规划</p>
+                    <div class="agent-features">
+                        <span class="feature-tag">内容创作</span>
+                        <span class="feature-tag">SEO优化</span>
+                        <span class="feature-tag">策略规划</span>
+                    </div>
+                    <div class="agent-actions">
+                        <a href="#" class="btn-disabled">规划中</a>
+                        <a href="/content-assistant/concept" class="btn-secondary">了解概念</a>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="blob"></div>
-        <div class="blob"></div>
-    </header>
-
-    <div class="container">
-        <section class="features">
-            <h2>主要特性</h2>
-            <div class="feature-item">
-                <img src="images/stock-data-icon.svg" alt="实时股市数据" class="feature-icon">
-                <p>实时获取全球主要股市数据，包括A股、美股、港股等市场的实时价格、涨跌幅、成交量等关键指标</p>
+    </section>
+    
+    <!-- Platform Features Section -->
+    <section id="features" class="features">
+        <div class="features-container">
+            <h2 class="features-title">平台特性</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <img src="images/mcp-config-icon.svg" alt="统一架构" class="feature-icon">
+                    <h3 class="feature-title">统一架构</h3>
+                    <p class="feature-description">基于MCP（Model Configuration Parameters）的统一配置管理，确保所有助手的一致性和可扩展性</p>
+                </div>
+                <div class="feature-card">
+                    <img src="images/vector-search-icon.svg" alt="向量搜索" class="feature-icon">
+                    <h3 class="feature-title">智能搜索</h3>
+                    <p class="feature-description">集成FAISS向量数据库，为所有助手提供快速、准确的语义搜索和知识检索能力</p>
+                </div>
+                <div class="feature-card">
+                    <img src="images/analysis-icon.svg" alt="模块化设计" class="feature-icon">
+                    <h3 class="feature-title">模块化设计</h3>
+                    <p class="feature-description">采用模块化架构，支持快速开发新的专业助手，降低开发成本和维护复杂度</p>
+                </div>
+                <div class="feature-card">
+                    <img src="images/stock-data-icon.svg" alt="开源生态" class="feature-icon">
+                    <h3 class="feature-title">开源生态</h3>
+                    <p class="feature-description">完全开源的平台，支持社区贡献，共同构建更强大的AI助手生态系统</p>
+                </div>
             </div>
-            <div class="feature-item">
-                <img src="images/analysis-icon.svg" alt="股票详情分析" class="feature-icon">
-                <p>提供多维度的股票分析，包括K线图、技术指标（MACD、RSI等）、财务数据、新闻舆情等深度分析</p>
-            </div>
-            <div class="feature-item">
-                <img src="images/mcp-config-icon.svg" alt="MCP配置管理" class="feature-icon">
-                <p>MCP（Model Configuration Parameters）模型配置参数管理，通过配置文件灵活调整模型行为</p>
-            </div>
-            <div class="feature-item">
-                <img src="images/vector-search-icon.svg" alt="本地向量搜索" class="feature-icon">
-                <p>基于FAISS向量数据库的本地搜索能力，快速检索股票相关的新闻、公告、研报等内容</p>
-            </div>
-        </section>
-
-
-        <section class="screenshots">
-            <h2>截图/动图展示</h2>
-            <p>项目实际运行界面展示（此处可添加图片）</p>
-        </section>
-
-        <section class="features-detail">
-            <h2>功能详情</h2>
-            <h3>股市信息展示</h3>
-            <p>支持全球主要股票市场，包括A股、美股、港股、日股等，展示实时价格、涨跌幅、成交量、换手率等核心数据，并提供图表可视化展示。</p>
-
-            <h3>股票详情分析</h3>
-            <p>提供全面的股票分析工具，包含：
-            <ul>
-                <li>K线图与技术指标分析（MACD、RSI、均线系统等）</li>
-                <li>财务数据分析（营收、利润、资产负债等核心指标）</li>
-                <li>新闻舆情分析（正负面情绪识别、热点事件追踪）</li>
-                <li>历史数据回溯与对比分析</li>
-            </ul>
-            </p>
-
-            <h3>MCP配置</h3>
-            <p>MCP（Model Configuration Parameters）是X2Agent的模型配置参数系统，允许用户通过YAML配置文件调整模型的行为特征。支持的配置项包括：
-            <ul>
-                <li>数据更新频率与时间范围设置</li>
-                <li>风险偏好参数调节</li>
-                <li>算法模型选择（不同预测模型切换）</li>
-                <li>个性化指标权重配置</li>
-            </ul>
-            </p>
-
-            <h3>本地向量搜索</h3>
-            <p>X2Agent采用FAISS向量数据库实现高效的本地搜索功能，支持对以下内容进行快速检索：
-            <ul>
-                <li>股票相关新闻（标题、正文、来源等）</li>
-                <li>公司公告与财报</li>
-                <li>行业研究报告</li>
-                <li>社交媒体讨论内容</li>
-            </ul>
-            搜索响应时间低于200ms，支持自然语言查询和相关性排序。
-            </p>
-        </section>
-
-        <section class="use-cases">
-            <h2>使用场景</h2>
-            <p>X2Agent为各类用户提供实用价值：</p>
-            <ul>
-                <li>投资者：快速获取股票全景信息，辅助投资决策</li>
-                <li>分析师：整合多源数据，提升研究效率</li>
-                <li>金融学生：学习股票分析方法和实践工具</li>
-                <li>量化交易者：获取标准化数据接口，开发交易策略</li>
-            </ul>
-        </section>
-    </div>
-
-    <footer>
-        <div class="footer-content">
-            <p>&copy; 2025 X2Agent. All rights reserved.</p>
-            <p class="thank-you">本站点由Qwen3生成，感谢Qwen3提供的强大支持！</p>
-            <p>这是一个现代化的股票市场分析工具，旨在帮助用户更好地理解和分析股票市场。</p>
         </div>
-    </footer>
+    </section>
+
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <div class="section-container">
+            <h2 class="section-title">关于X2Agent</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <h3>我们的愿景</h3>
+                    <p>X2Agent致力于构建下一代智能助手生态系统，通过专业化的AI解决方案，为不同领域的用户提供高效、智能的服务体验。</p>
+                    
+                    <h3>技术优势</h3>
+                    <ul>
+                        <li><strong>统一架构</strong>：基于MCP的标准化配置管理，确保所有助手的一致性</li>
+                        <li><strong>模块化设计</strong>：支持快速开发和部署新的专业助手</li>
+                        <li><strong>智能搜索</strong>：集成FAISS向量数据库，提供语义级搜索能力</li>
+                        <li><strong>开源生态</strong>：完全开源，支持社区贡献和定制化开发</li>
+                    </ul>
+                    
+                    <h3>发展路线</h3>
+                    <p>我们正在持续扩展助手生态，计划推出更多专业领域的智能助手，包括代码开发、数据分析、内容创作等，构建完整的AI助手解决方案矩阵。</p>
+                </div>
+                
+                <div class="stats-grid">
+                    <div class="stat-item">
+                        <div class="stat-number">1+</div>
+                        <div class="stat-label">已发布助手</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">3+</div>
+                        <div class="stat-label">开发中助手</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">100%</div>
+                        <div class="stat-label">开源免费</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">24/7</div>
+                        <div class="stat-label">持续服务</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <!-- Footer占位符 -->
+    <div id="footer-placeholder"></div>
+
+    <!-- 公共组件加载脚本 -->
+    <script src="js/common.js"></script>
 </body>
 
 </html>
