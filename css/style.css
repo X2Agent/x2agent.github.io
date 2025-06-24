@@ -674,14 +674,26 @@ header::before {
     background: #f5f5f7;
 }
 
+.use-cases .section-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 40px;
+}
+
 /* Features Detail Section */
 .features-detail {
     padding: 100px 0;
     background: #ffffff;
 }
 
+.features-detail .section-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 40px;
+}
+
 .section-content {
-    max-width: 1000px;
+    max-width: 1200px;
     margin: 0 auto;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
