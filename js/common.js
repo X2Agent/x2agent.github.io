@@ -1,42 +1,22 @@
 // 动态加载组件的通用函数
-function loadComponent(elementId, componentPath) {
-    fetch(componentPath)
-        .then(response => response.text())
-        .then(html => {
-            document.getElementById(elementId).innerHTML = html;
-        })
-        .catch(error => {
-            console.error('Error loading component:', error);
-        });
-}
-
-// 页面加载完成后加载组件
+// GitHub按钮悬停效果
 document.addEventListener('DOMContentLoaded', function() {
-    // 加载header
-    loadComponent('header-placeholder', 'components/header.html');
-    
-    // 加载footer
-    loadComponent('footer-placeholder', 'components/footer.html');
-    
-    // 为GitHub按钮添加悬停效果
-    setTimeout(() => {
-        const githubButton = document.querySelector('.github-link');
-        if (githubButton) {
-            githubButton.addEventListener('mouseenter', function() {
-                const icon = this.querySelector('img');
-                if (icon) {
-                    icon.style.transform = 'scale(1.1)';
-                }
-            });
-            
-            githubButton.addEventListener('mouseleave', function() {
-                const icon = this.querySelector('img');
-                if (icon) {
-                    icon.style.transform = 'scale(1)';
-                }
-            });
-        }
-    }, 100);
+    const githubButton = document.querySelector('.github-link');
+    if (githubButton) {
+        githubButton.addEventListener('mouseenter', function() {
+            const icon = this.querySelector('img');
+            if (icon) {
+                icon.style.transform = 'scale(1.1)';
+            }
+        });
+        
+        githubButton.addEventListener('mouseleave', function() {
+            const icon = this.querySelector('img');
+            if (icon) {
+                icon.style.transform = 'scale(1)';
+            }
+        });
+    }
 });
 
 // 平滑滚动到锚点

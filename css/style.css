@@ -407,7 +407,7 @@ header::before {
 
 /* Agents Section */
 .agents-section {
-    padding: 100px 0;
+    padding: 48px 0;
     background: #f5f5f7;
 }
 
@@ -577,7 +577,7 @@ header::before {
 
 /* About Section */
 .about-section {
-    padding: 100px 0;
+    padding: 48px 0;
     background: #ffffff;
 }
 
@@ -630,6 +630,25 @@ header::before {
     font-weight: bold;
 }
 
+.stats-container {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.stats-row {
+    display: flex;
+    gap: 30px;
+}
+
+.stats-row:first-child {
+    justify-content: space-between;
+}
+
+.stats-row:last-child {
+    justify-content: center;
+}
+
 .stats-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -642,6 +661,12 @@ header::before {
     background: #f5f5f7;
     border-radius: 16px;
     transition: all 0.3s ease;
+    flex: 1;
+}
+
+.stat-item-full {
+    width: calc(100% - 0px);
+    max-width: calc(2 * (50% - 15px));
 }
 
 .stat-item:hover {
@@ -664,13 +689,13 @@ header::before {
 
 /* Features Section */
 .features {
-    padding: 100px 0;
+    padding: 48px 0;
     background: #ffffff;
 }
 
 /* Use Cases Section */
 .use-cases {
-    padding: 100px 0;
+    padding: 48px 0;
     background: #f5f5f7;
 }
 
@@ -682,7 +707,7 @@ header::before {
 
 /* Features Detail Section */
 .features-detail {
-    padding: 100px 0;
+    padding: 48px 0;
     background: #ffffff;
 }
 
@@ -939,6 +964,14 @@ footer {
         gap: 40px;
     }
 
+    .stats-container {
+        gap: 20px;
+    }
+    
+    .stats-row {
+        gap: 20px;
+    }
+    
     .stats-grid {
         grid-template-columns: 1fr 1fr;
         gap: 20px;
@@ -967,6 +1000,19 @@ footer {
         font-size: 2.2rem;
     }
 
+    .stats-row {
+        flex-direction: column;
+    }
+    
+    .stats-row:first-child,
+    .stats-row:last-child {
+        justify-content: center;
+    }
+    
+    .stat-item-full {
+        max-width: 100%;
+    }
+    
     .stats-grid {
         grid-template-columns: 1fr;
     }
