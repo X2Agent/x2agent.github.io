@@ -38,6 +38,12 @@ const pages = {
         contentFile: 'pages/market-assistant-content.html',
         head_extra: '<link rel="icon" type="image/x-icon" href="images/favicon.ico">',
         scripts: ``
+    },
+    'writer-assistant.html': {
+        title: 'WriterAssistant - 专业AI写作助手 | X2Agent',
+        contentFile: 'pages/writer-assistant-content.html',
+        head_extra: '<link rel="icon" type="image/x-icon" href="images/favicon.ico">',
+        scripts: ``
     }
 };
 
