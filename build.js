@@ -29,18 +29,21 @@ class StaticTemplateEngine {
 const pages = {
     'index.html': {
         title: 'X2Agent - 智能助手生态平台',
+        keywords: 'X2Agent, AI助手, 智能助手, 人工智能平台, AI生态系统, 智能解决方案',
         contentFile: 'pages/index-content.html',
         head_extra: '',
         scripts: ``
     },
     'market-assistant.html': {
         title: 'MarketAssistant - 智能市场分析助手 | X2Agent',
+        keywords: 'MarketAssistant, 市场分析, 投资分析, AI预测, 股票分析, 量化投资, 金融数据分析, 市场预警',
         contentFile: 'pages/market-assistant-content.html',
         head_extra: '<link rel="icon" type="image/x-icon" href="images/favicon.ico">',
         scripts: ``
     },
     'writer-assistant.html': {
         title: 'WriterAssistant - 专业AI写作助手 | X2Agent',
+        keywords: 'WriterAssistant, AI写作, 内容创作, 自媒体运营, 文章生成, 配图生成, 多平台发布, AIGC内容',
         contentFile: 'pages/writer-assistant-content.html',
         head_extra: '<link rel="icon" type="image/x-icon" href="images/favicon.ico">',
         scripts: ``
@@ -76,6 +79,7 @@ function buildPages() {
         // 渲染页面
         const html = templateEngine.render(layoutTemplate, {
             title: config.title,
+            keywords: config.keywords,
             head_extra: config.head_extra,
             content: content,
             scripts: config.scripts
